@@ -111,4 +111,5 @@ def scrape(argsDict):
         # Keep scraping according to the interval the user specified.
         time.sleep(int(argsDict['--interval']) * 60)
 
-main(sys.argv[1:])
+if __name__ == '__main__':
+    main(sys.argv[1:])
